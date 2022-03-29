@@ -57,9 +57,32 @@ print ('''
 │                    │ © Copyright By Cinta & HamZ │
 └─────────────────────────────────────────────┘''') 
 
-rl.question("Password : ", function(password) {
-   if (password == "cintacans") 
-    {
+#login tools
+password ="NUKLIR SAMP"
+
+print("""\u001b[35m                              
+██╗░░░░░░█████╗░░██████╗░██╗███╗░░██╗
+██║░░░░░██╔══██╗██╔════╝░██║████╗░██║
+██║░░░░░██║░░██║██║░░██╗░██║██╔██╗██║
+██║░░░░░██║░░██║██║░░╚██╗██║██║╚████║
+███████╗╚█████╔╝╚██████╔╝██║██║░╚███║
+╚══════╝░╚════╝░░╚═════╝░╚═╝╚═╝░░╚══╝
+""")
+for i in range(3):
+	pwd = input("\u001b[37m[ + ] Enter Password  : ")
+	j=3
+	if(pwd==password):
+		time.sleep(5)
+		print("[ + ] Please Security To Password!!! ")
+		break
+	else:
+		time.sleep(5)
+		print("\u001b[31m[ × ] Wrong IS Security Password!!! ")
+		continue
+time.sleep(5)
+print("\u001b[35m{ √ } Successfully Loginned")
+time.sleep(2)
+os.system("clear")
 
 
 methods = """
